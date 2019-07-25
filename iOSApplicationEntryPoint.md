@@ -18,6 +18,7 @@ Unite these two objects into one. In other words, make application object own de
 1. Delete `AppDelegate.swift` file
 2. Create subclass of [`UIApplication`](https://developer.apple.com/documentation/uikit/uiapplication), which implements [`UIApplicationDelegate`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate)
 3. Create [`main.swift`](https://developer.apple.com/swift/blog/?id=7) file
+
 ``` swift
 import UIKit
 

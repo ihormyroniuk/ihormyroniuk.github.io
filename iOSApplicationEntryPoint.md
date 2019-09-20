@@ -3,6 +3,7 @@
 Approach to implement an entry point for iOS application is considered in this document.
 
 ### By default
+
 By default [Xcode](https://developer.apple.com/xcode/) generates file `AppDelegate.swift`, which contains class `AppDelegate` inherited by [`UIResponder`](https://developer.apple.com/documentation/uikit/uiresponder), implemented protocol [`UIApplicationDelegate`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate) and marked by attribute [`@UIApplicationMain`](https://docs.swift.org/swift-book/ReferenceManual/Attributes.html).
 
 As result of this there are two global objects at runtime: [`UIApplication.shared`](https://developer.apple.com/documentation/uikit/uiapplication/1622975-shared) and [`UIApplication.shared.delegate`](https://developer.apple.com/documentation/uikit/uiapplication/1622936-delegate). [`UIApplication.shared`](https://developer.apple.com/documentation/uikit/uiapplication/1622975-shared) is type of [`UIApplication`](https://developer.apple.com/documentation/uikit/uiapplication)
@@ -13,10 +14,19 @@ and
 
 Unite these two objects into one. In other words, make application object own delegate. To accomplish that, it is needed to make subclass of [`UIApplication`](https://developer.apple.com/documentation/uikit/uiapplication) and set it as  application object's class.
 
-### How To
+### Implementation
 
 1. Delete `AppDelegate.swift` file
 2. Create subclass of [`UIApplication`](https://developer.apple.com/documentation/uikit/uiapplication), which implements [`UIApplicationDelegate`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate)
+
+``` swift
+import UIKit
+
+class Application: UIApplication, UIApplicationDelegate {
+  
+}
+```
+
 3. Create [`main.swift`](https://developer.apple.com/swift/blog/?id=7) file
 
 ``` swift

@@ -25,8 +25,8 @@ import UIKit
 UIApplicationMain(
     CommandLine.argc,
     CommandLine.unsafeArgv, 
-    NSStringFromClass(MyApplication.self),
-    NSStringFromClass(MyApplication.self)
+    NSStringFromClass(Application.self),
+    NSStringFromClass(Application.self)
 )
 ```
 

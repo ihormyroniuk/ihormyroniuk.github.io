@@ -12,7 +12,7 @@ and
 
 ### Proposition
 
-Unite these two objects into one. In other words, make application object own delegate. To accomplish that, it is needed to make subclass of [`UIApplication`](https://developer.apple.com/documentation/uikit/uiapplication) and set it as  application object's class.
+Unite these two objects into one. In other words, make application object its own delegate. To accomplish that, it is needed to make subclass of [`UIApplication`](https://developer.apple.com/documentation/uikit/uiapplication) and set it as  application object's class.
 
 ### Implementation
 
@@ -27,7 +27,7 @@ class Application: UIApplication, UIApplicationDelegate {
 }
 ```
 
-3. Create [`main.swift`](https://developer.apple.com/swift/blog/?id=7) file, where call function [`UIApplicationMain`](https://developer.apple.com/documentation/uikit/1622933-uiapplicationmain), specifying class `Application` as `principalClassName` and `delegateClassName`.
+3. Create [`main.swift`](https://developer.apple.com/swift/blog/?id=7) file, where call function [`UIApplicationMain`](https://developer.apple.com/documentation/uikit/1622933-uiapplicationmain), specifying class `Application` in parameters `principalClassName` and `delegateClassName`.
 
 ``` swift
 import UIKit

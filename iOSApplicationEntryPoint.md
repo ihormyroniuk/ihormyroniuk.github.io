@@ -1,8 +1,10 @@
 # iOS Application Entry Point
 
-Approach to implement an entry point for iOS application is considered in this document.
+### Objective
 
-### By default
+Create approach to implement an generalized entry point for iOS application.
+
+### By default (Xcode)
 
 By default [Xcode](https://developer.apple.com/xcode/) generates file `AppDelegate.swift`, which contains class `AppDelegate` inherited by [`UIResponder`](https://developer.apple.com/documentation/uikit/uiresponder), implemented protocol [`UIApplicationDelegate`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate) and marked by attribute [`@UIApplicationMain`](https://docs.swift.org/swift-book/ReferenceManual/Attributes.html).
 

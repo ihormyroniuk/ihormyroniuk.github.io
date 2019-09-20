@@ -52,9 +52,28 @@ UIApplicationMain(
 )
 ```
 
+### Notes
+
+1. You can declare reference to application object in [`main.swift`](https://developer.apple.com/swift/blog/?id=7) file, after calling function [`UIApplicationMain`](https://developer.apple.com/documentation/uikit/1622933-uiapplicationmain).
+
+``` swift
+import UIKit
+
+UIApplicationMain(
+    CommandLine.argc,
+    CommandLine.unsafeArgv, 
+    NSStringFromClass(Application.self),
+    NSStringFromClass(Application.self)
+)
+
+var application: Application! {
+  return UIApplication.shared as? Application
+}
+```
+
 ### In Result
 
-There is one global object at runtime. It is [`UIApplication.shared`](https://developer.apple.com/documentation/uikit/uiapplication/1622975-shared) of type `Application`.
+There is one global object at runtime. It is [`UIApplication.shared`](https://developer.apple.com/documentation/uikit/uiapplication/1622975-shared) of type `Application`, which allows us to override [`UIApplication`](https://developer.apple.com/documentation/uikit/uiapplication) methods.
 
 ### References
 [Swift. Files and Initialization](https://developer.apple.com/swift/blog/?id=7)\

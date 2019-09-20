@@ -8,7 +8,7 @@ In result there are two global objects at runtime: [`UIApplication.shared`](http
 and
 [`UIApplication.shared.delegate`](https://developer.apple.com/documentation/uikit/uiapplication/1622936-delegate) is type of [`UIApplicationDelegate`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate). 
 
-### Xcode
+### [Xcode](https://developer.apple.com/xcode/)
 
 By default [Xcode](https://developer.apple.com/xcode/) generates file `AppDelegate.swift`, which contains class `AppDelegate` inherited by [`UIResponder`](https://developer.apple.com/documentation/uikit/uiresponder), implemented protocol [`UIApplicationDelegate`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate) and marked by attribute [`@UIApplicationMain`](https://docs.swift.org/swift-book/ReferenceManual/Attributes.html). Applying this attribute to a class to indicate that it’s the application delegate [`UIApplication.shared.delegate`](https://developer.apple.com/documentation/uikit/uiapplication/1622936-delegate). Using this attribute is equivalent to calling the NSApplicationMain(_:_:) function.
 

@@ -70,6 +70,7 @@ var application: Application! {
   return UIApplication.shared as? Application
 }
 ```
+2. You can use [`AUIApplication`](https://github.com/ihormyroniuk/AUIKit/blob/master/AUIKit/Application/AUIApplication.swift) protocol and its implementations ([`AUIEmptyApplication`](https://github.com/ihormyroniuk/AUIKit/blob/master/AUIKit/Application/AUIEmptyApplication.swift)) to inherit your `Application` class.
 
 ### In Result
 

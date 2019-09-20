@@ -18,7 +18,7 @@ Create approach to implement an generalized entry point for iOS application.
 
 ### Proposition
 
-Unite these two objects into one. In other words, make application object its own delegate. To accomplish that, it is needed to make subclass of [`UIApplication`](https://developer.apple.com/documentation/uikit/uiapplication) and set it as  application object's class.
+Unite [`UIApplication.shared`](https://developer.apple.com/documentation/uikit/uiapplication/1622975-shared) and [`UIApplication.shared.delegate`](https://developer.apple.com/documentation/uikit/uiapplication/1622936-delegate) objects into one. In other words, make application object its own delegate. To accomplish that, it is needed to make subclass of [`UIApplication`](https://developer.apple.com/documentation/uikit/uiapplication) and set it as  application object's class.
 
 ### Implementation
 

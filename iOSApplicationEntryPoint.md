@@ -8,9 +8,9 @@ Create approach to implement an generalized entry point for iOS application.
 
 By default [Xcode](https://developer.apple.com/xcode/) generates file `AppDelegate.swift`, which contains class `AppDelegate` inherited by [`UIResponder`](https://developer.apple.com/documentation/uikit/uiresponder), implemented protocol [`UIApplicationDelegate`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate) and marked by attribute [`@UIApplicationMain`](https://docs.swift.org/swift-book/ReferenceManual/Attributes.html).
 
-As result of this there are two global objects at runtime: [`UIApplication.shared`](https://developer.apple.com/documentation/uikit/uiapplication/1622975-shared) and [`UIApplication.shared.delegate`](https://developer.apple.com/documentation/uikit/uiapplication/1622936-delegate). [`UIApplication.shared`](https://developer.apple.com/documentation/uikit/uiapplication/1622975-shared) is type of [`UIApplication`](https://developer.apple.com/documentation/uikit/uiapplication)
+In result of this there are two global objects at runtime: [`UIApplication.shared`](https://developer.apple.com/documentation/uikit/uiapplication/1622975-shared) and [`UIApplication.shared.delegate`](https://developer.apple.com/documentation/uikit/uiapplication/1622936-delegate). [`UIApplication.shared`](https://developer.apple.com/documentation/uikit/uiapplication/1622975-shared) is type of [`UIApplication`](https://developer.apple.com/documentation/uikit/uiapplication)
 and
-[`UIApplication.shared.delegate`](https://developer.apple.com/documentation/uikit/uiapplication/1622936-delegate) is type of `AppDelegate`. It is proposed that class `AppDelegate` is entry point for application.
+[`UIApplication.shared.delegate`](https://developer.apple.com/documentation/uikit/uiapplication/1622936-delegate) is type of `AppDelegate`. It is proposed to consider class `AppDelegate` as entry point for application.
 
 ### Proposition
 
@@ -42,8 +42,12 @@ UIApplicationMain(
 )
 ```
 
+### In Result
+
+There is one global object at runtime. It is [`UIApplication.shared`](https://developer.apple.com/documentation/uikit/uiapplication/1622975-shared) of type `Application`.
+
 ### References
-[`Swift. Files and Initialization`](https://developer.apple.com/swift/blog/?id=7)\
+[Swift. Files and Initialization](https://developer.apple.com/swift/blog/?id=7)\
 [`UIApplicationMain`](https://developer.apple.com/documentation/uikit/1622933-uiapplicationmain)\
 [`@UIApplicationMain`](https://docs.swift.org/swift-book/ReferenceManual/Attributes.html)\
 [`UIApplication`](https://developer.apple.com/documentation/uikit/uiapplication)\

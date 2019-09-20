@@ -14,7 +14,7 @@ By default [Xcode](https://developer.apple.com/xcode/) generates file `AppDelega
 
 ### Problem
 
-There are several limitations of this approach:
+There are several problems with this approach:
 1. There are 2 global objects: [`UIApplication.shared`](https://developer.apple.com/documentation/uikit/uiapplication/1622975-shared) and [`UIApplication.shared.delegate`](https://developer.apple.com/documentation/uikit/uiapplication/1622936-delegate).
 2. Sometimes it is needed to have ability to override [`UIApplication`](https://developer.apple.com/documentation/uikit/uiapplication) methods.
 

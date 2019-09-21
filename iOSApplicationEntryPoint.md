@@ -20,7 +20,7 @@ There are several problems with this approach:
 
 ### Objective
 
-Create approach to implement an generalized entry point for iOS application to solve above problems.
+Describe approach to implement an generalized entry point for iOS application to solve above problems.
 
 ### Proposition
 

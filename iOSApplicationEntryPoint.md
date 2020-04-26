@@ -41,8 +41,8 @@ UIApplicationMain(
 
 ### Notes
 
-1. You can use [`AUIApplication`](https://github.com/ihormyroniuk/AUIKit/blob/master/AUIKit/Application/AUIApplication.swift) protocol and its implementations ([`AUIEmptyApplication`](https://github.com/ihormyroniuk/AUIKit/blob/master/AUIKit/Application/AUIEmptyApplication.swift)) to inherit your `Application` class.
-2. You can use [`AUIApplicationMain`](https://github.com/ihormyroniuk/AUIKit/blob/master/AUIKit/AUIApplicationMain.swift) function instead of [`UIApplicationMain`](https://developer.apple.com/documentation/uikit/1622933-uiapplicationmain).
+1. You can use [`AUIApplicationMain`](https://github.com/ihormyroniuk/AUIKit/blob/master/AUIKit/AUIApplicationMain.swift) function instead of [`UIApplicationMain`](https://developer.apple.com/documentation/uikit/1622933-uiapplicationmain).
+2. You can use [`AUIApplication`](https://github.com/ihormyroniuk/AUIKit/blob/master/AUIKit/Application/AUIApplication.swift) protocol and its implementations ([`AUIEmptyApplication`](https://github.com/ihormyroniuk/AUIKit/blob/master/AUIKit/Application/AUIEmptyApplication.swift)) to inherit your `Application` class.
 
 ### References
 

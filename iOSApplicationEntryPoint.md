@@ -2,7 +2,7 @@
 
 ### In General
 
-iOS application is a [Swift](https://swift.org/) application. It means it has entry point same as all [Swift](https://swift.org/)'s applications - [`main.swift`](https://developer.apple.com/swift/blog/?id=7) file. Then control is transfered to [`UIKit`](https://developer.apple.com/documentation/uikit) framework, using function [`UIApplicationMain`](https://developer.apple.com/documentation/uikit/1622933-uiapplicationmain), which sets up the main event loop, including the application’s run loop, and begins processing events. Also it instantiates the application object [`UIApplication.shared`](https://developer.apple.com/documentation/uikit/uiapplication/1622975-shared), its delegate [`UIApplication.shared.delegate`](https://developer.apple.com/documentation/uikit/uiapplication/1622936-delegate) (if any) and sets the delegate for the application.\
+iOS application is a [Swift](https://swift.org/) application. It means it has entry point same as all [Swift](https://swift.org/)'s applications - [`main.swift`](https://developer.apple.com/swift/blog/?id=7) file. Then control is transfered to [`UIKit`](https://developer.apple.com/documentation/uikit) framework, using function [`UIApplicationMain`](https://developer.apple.com/documentation/uikit/1622933-uiapplicationmain), which sets up the main event loop, including the application’s run loop, and begins processing events. Also it instantiates the application object [`UIApplication.shared`](https://developer.apple.com/documentation/uikit/uiapplication/1622975-shared), its delegate [`UIApplication.shared.delegate`](https://developer.apple.com/documentation/uikit/uiapplication/1622936-delegate) (if any) and sets the delegate for the application.  
 The application object [`UIApplication.shared`](https://developer.apple.com/documentation/uikit/uiapplication/1622975-shared) is central in the iOS application. It is responsible for interaction with operating system and user.
 
 
@@ -21,7 +21,7 @@ Unite [`UIApplication.shared`](https://developer.apple.com/documentation/uikit/u
 ### Implementation
 
 1. Delete `AppDelegate.swift` file (or at least delete attribute [`@UIApplicationMain`](https://docs.swift.org/swift-book/ReferenceManual/Attributes.html) for class `AppDelegate`).
-2. Create `Application.swift` file with class `Application` is subclass of [`UIApplication`](https://developer.apple.com/documentation/uikit/uiapplication), which implements [`UIApplicationDelegate`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate)./
+2. Create `Application.swift` file with class `Application` is subclass of [`UIApplication`](https://developer.apple.com/documentation/uikit/uiapplication), which implements [`UIApplicationDelegate`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate).  
 ``` swift
 import UIKit
 
@@ -30,7 +30,7 @@ class Application: UIApplication, UIApplicationDelegate {
 }
 ```
 
-3. Create [`main.swift`](https://developer.apple.com/swift/blog/?id=7) file, where call function [`UIApplicationMain`](https://developer.apple.com/documentation/uikit/1622933-uiapplicationmain), specifying class `Application` in parameters `principalClassName` and `delegateClassName`./
+3. Create [`main.swift`](https://developer.apple.com/swift/blog/?id=7) file, where call function [`UIApplicationMain`](https://developer.apple.com/documentation/uikit/1622933-uiapplicationmain), specifying class `Application` in parameters `principalClassName` and `delegateClassName`.  
 ``` swift
 import UIKit
 

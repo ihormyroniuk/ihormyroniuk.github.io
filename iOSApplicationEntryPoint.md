@@ -51,10 +51,10 @@ UIApplicationMain(
 
 ### References
 
-[Swift. Files and Initialization](https://developer.apple.com/swift/blog/?id=7)\
-[`UIApplicationMain`](https://developer.apple.com/documentation/uikit/1622933-uiapplicationmain)\
-[`@UIApplicationMain`](https://docs.swift.org/swift-book/ReferenceManual/Attributes.html)\
-[`UIApplication`](https://developer.apple.com/documentation/uikit/uiapplication)\
-[`UIApplication.shared`](https://developer.apple.com/documentation/uikit/uiapplication/1622975-shared)\
-[`UIApplicationDelegate`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate)\
+[Swift. Files and Initialization](https://developer.apple.com/swift/blog/?id=7)  
+[`UIApplicationMain`](https://developer.apple.com/documentation/uikit/1622933-uiapplicationmain)  
+[`@UIApplicationMain`](https://docs.swift.org/swift-book/ReferenceManual/Attributes.html)  
+[`UIApplication`](https://developer.apple.com/documentation/uikit/uiapplication)  
+[`UIApplication.shared`](https://developer.apple.com/documentation/uikit/uiapplication/1622975-shared)  
+[`UIApplicationDelegate`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate)  
 [`UIApplication.shared.delegate`](https://developer.apple.com/documentation/uikit/uiapplication/1622936-delegate)

@@ -15,26 +15,26 @@ By default [Xcode](https://developer.apple.com/xcode/) generates file `AppDelega
 1. Delete `AppDelegate.swift` file (or at least delete attribute [`@UIApplicationMain`](https://docs.swift.org/swift-book/ReferenceManual/Attributes.html) for class `AppDelegate`).
 2. Create `Application.swift` file with class `Application` is subclass of [`UIApplication`](https://developer.apple.com/documentation/uikit/uiapplication), which implements [`UIApplicationDelegate`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate).
 
-    ``` swift
-    import UIKit
-    
-    class Application: UIApplication, UIApplicationDelegate {
-        
-    }
-    ```
+   ``` swift
+   import UIKit
+   
+   class Application: UIApplication, UIApplicationDelegate {
+       
+   }
+   ```
 
 3. Create [`main.swift`](https://developer.apple.com/swift/blog/?id=7) file, where call function [`UIApplicationMain`](https://developer.apple.com/documentation/uikit/1622933-uiapplicationmain), specifying class `Application` in parameters `principalClassName` and `delegateClassName`.
 
-    ``` swift
-    import UIKit
-    
-    UIApplicationMain(
-        CommandLine.argc,
-        CommandLine.unsafeArgv, 
-        NSStringFromClass(Application.self),
-        NSStringFromClass(Application.self)
-    )
-    ```
+   ``` swift
+   import UIKit
+   
+   UIApplicationMain(
+       CommandLine.argc,
+       CommandLine.unsafeArgv, 
+       NSStringFromClass(Application.self),
+       NSStringFromClass(Application.self)
+   )
+   ```
 
 ### Notes
 

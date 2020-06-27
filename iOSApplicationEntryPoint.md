@@ -16,7 +16,7 @@ By default [Xcode](https://developer.apple.com/xcode/) generates file `AppDelega
 #### Implementation
 
 1. Delete `AppDelegate.swift` file (or at least delete attribute [`@UIApplicationMain`](https://docs.swift.org/swift-book/ReferenceManual/Attributes.html) for class `AppDelegate`).
-2. Create `Application.swift` file with class `Application` is subclass of [`UIApplication`](https://developer.apple.com/documentation/uikit/uiapplication), which implements [`UIApplicationDelegate`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate).
+2. Create `Application.swift`(naming is up to you) file with class `Application` is subclass of [`UIApplication`](https://developer.apple.com/documentation/uikit/uiapplication), which implements [`UIApplicationDelegate`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate).
 
    ``` swift
    import UIKit
@@ -39,10 +39,10 @@ By default [Xcode](https://developer.apple.com/xcode/) generates file `AppDelega
    )
    ```
 
-#### Notes
+#### Note
 
-1. You can use [`AUIApplicationMain`](https://github.com/ihormyroniuk/AUIKit/blob/master/AUIKit/AUIApplicationMain.swift) function instead of [`UIApplicationMain`](https://developer.apple.com/documentation/uikit/1622933-uiapplicationmain).
-2. You can use [`AUIApplication`](https://github.com/ihormyroniuk/AUIKit/blob/master/AUIKit/Application/AUIApplication.swift) protocol and its implementations ([`AUIEmptyApplication`](https://github.com/ihormyroniuk/AUIKit/blob/master/AUIKit/Application/AUIEmptyApplication.swift)) to inherit your `Application` class.
+You can use [AUIKit](https://github.com/ihormyroniuk/AUIKit) for simplifying [UIKit](https://developer.apple.com/documentation/uikit) interfaces. Use [`AUIApplicationMain`](https://github.com/ihormyroniuk/AUIKit/blob/master/AUIKit/AUIApplicationMain.swift) function instead of [`UIApplicationMain`](https://developer.apple.com/documentation/uikit/1622933-uiapplicationmain) and [`AUIApplication`](https://github.com/ihormyroniuk/AUIKit/blob/master/AUIKit/Application/AUIApplication.swift) protocol and its implementations ([`AUIEmptyApplication`](https://github.com/ihormyroniuk/AUIKit/blob/master/AUIKit/Application/AUIEmptyApplication.swift)) to inherit your `Application` class
+
 
 ### References
 

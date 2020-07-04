@@ -1,3 +1,3 @@
-- [iOS Application Entry Point](https://ihormyroniuk.github.io/iOS/ApplicationEntryPoint)
+- [iOS Application Entry Point](https://ihormyroniuk.github.io/SoftwareDevelopment/iOS/ApplicationEntryPoint)
 - [iOS References](https://ihormyroniuk.github.io/References)
 - [iOS Best Practices](https://ihormyroniuk.github.io/BestPractices)

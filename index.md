@@ -1,3 +1,2 @@
-- [iOS Application Entry Point](software-development/ios/application-entry-point)
-- [iOS References](https://ihormyroniuk.github.io/References)
-- [iOS Best Practices](https://ihormyroniuk.github.io/BestPractices)
+- [iOS](software-development/ios)
+- [Resume](Resume)

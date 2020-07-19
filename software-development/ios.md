@@ -1,3 +1,4 @@
 - [Application Entry Point](ios/application-entry-point)
 - [Core Animation](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html)
 - No storyboards, only code
+- use UICollectionView instead UITableView
